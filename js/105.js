@@ -22,7 +22,7 @@ function sebastian() {
     opacity: 1;
   }
   </style>
-  <a id="badge" href="/index.html"><img src="/105.png" alt="105" title="Sebastian-105"></a>
+  <a id="badge" href="/index.html"><img src="https://external-105.netlify.app/105.png" alt="105" title="Sebastian-105"></a>
     `;
 
   document.body.insertAdjacentHTML('beforeend', icon);

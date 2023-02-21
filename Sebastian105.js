@@ -12,7 +12,7 @@ function sebastian() {
   }
 
   #badge img{
-    opacity: 0.5;
+    opacity: 0.75;
     transition-property: opacity, transform;
     transition: opacity 120ms, transform 120ms;
     transition-timing-function: ease-out;
@@ -22,7 +22,7 @@ function sebastian() {
     opacity: 1;
   }
   </style>
-  <a id="badge" href="/index.html"><img src="https://icon105.netlify.app/105.round.png" style="width:50px;height:50px;" alt="105" title="Sebastian-105"></a>
+  <a id="badge" href="/index.html"><img src="https://icon105.netlify.app/105.round.png" style="width:25px;height:25px;" alt="105" title="Sebastian-105"></a>
     `;
 
   document.body.insertAdjacentHTML('beforeend', icon);

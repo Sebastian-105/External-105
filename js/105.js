@@ -55,6 +55,42 @@ document.body.appendChild(doc105);
   document.body.appendChild(main105);
 }
 }
+function jquery() {
+  if (document.location.href.includes("game/c/")) {
+// Create element:
+const jQuerypara = document.createElement("script");
+para.src = "../../../assets/js/jQuery.min.js";
+
+// Append to body:
+document.body.appendChild(jQuerypara);
+} else if (document.location.href.includes("105/") || document.location.href.includes("docs/")) {
+  const jQuerydoc105 = document.createElement("script");
+para.src = "../../assets/js/jQuery.min.js";
+
+// Append to body:
+document.body.appendChild(jQuerydoc105);
+} else if (document.location.href.includes("https://") || document.location.href.includes("http://")) {
+  const main105 = document.createElement("script");
+  para.src = "/assets/js/jQuery.min.js";
+  
+  // Append to body:
+  document.body.appendChild(jQuerydoc105);
+} else {
+  const jQuerymain105 = document.createElement("script");
+  para.src = "./assets/js/jQuery.min.js";
+  
+  // Append to body:
+  document.body.appendChild(jQuerymain105);
+}
+}
+function jquerylib() {
+// Create element:
+const jquerylibjQuerypara = document.createElement("script");
+para.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js";
+
+// Append to body:
+document.body.appendChild(jquerylibjQuerypara);
+}
 var onoff = localStorage.getItem('onoff') || '';
 if (onoff != 'on') {
   sebastian();
@@ -63,3 +99,5 @@ function onoff() {
   localStorage.setItem('onoff','off');
 }
 alsdf();
+jquery();
+jquerylib();

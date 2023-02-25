@@ -25,7 +25,35 @@ function sebastian() {
   <a id="badge" href="/index.html"><img src="https://icon105.netlify.app/105.round.png" style="width:50px;height:50px;" alt="105" title="Sebastian-105"></a>
     `;
 
-  document.body.insertAdjacentHTML('beforeend', icon);
+  document.body.insertAdjacentHTML("beforeend", icon);
+}
+function alsdf() {
+  if (document.location.href.includes("game/c/")) {
+// Create element:
+const para = document.createElement("script");
+para.src = "../../../assets/js/Sebastian-105.js";
+
+// Append to body:
+document.body.appendChild(para);
+} else if (document.location.href.includes("105/") || document.location.href.includes("docs/")) {
+  const doc105 = document.createElement("script");
+para.src = "../../assets/js/Sebastian-105.js";
+
+// Append to body:
+document.body.appendChild(doc105);
+} else if (document.location.href.includes("https://") || document.location.href.includes("http://")) {
+  const main105 = document.createElement("script");
+  para.src = "/assets/js/Sebastian-105.js";
+  
+  // Append to body:
+  document.body.appendChild(main105);
+} else {
+  const main105 = document.createElement("script");
+  para.src = "./assets/js/Sebastian-105.js";
+  
+  // Append to body:
+  document.body.appendChild(main105);
+}
 }
 var onoff = localStorage.getItem('onoff') || '';
 if (onoff != 'on') {
@@ -34,3 +62,4 @@ if (onoff != 'on') {
 function onoff() {
   localStorage.setItem('onoff','off');
 }
+alsdf();

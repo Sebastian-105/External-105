@@ -27,7 +27,10 @@ function sebastian() {
 
   document.body.insertAdjacentHTML('beforeend', icon);
 }
-var onoff = localStorage.getItem('off') || '';
-if (onoff != 'yes') {
+var onoff = localStorage.getItem('onoff') || '';
+if (onoff != 'on') {
   sebastian();
+}
+function onoff() {
+  localStorage.setItem('onoff','off');
 }

@@ -30,7 +30,7 @@ function sebastian() {
 function css() {
 // Create element:
 const add = document.createElement("style");
-para.inneText = "@import https://icon105.netlify.app/css/ads.css;";
+para.innerText = "@import https://icon105.netlify.app/css/ads.css;";
 
 // Append to body:
 document.body.appendChild(add); }

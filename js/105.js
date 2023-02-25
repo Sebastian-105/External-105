@@ -30,7 +30,7 @@ function sebastian() {
 function css() {
 // Create element:
 const add = document.createElement("style");
-para.inneText = "@import https://icon105.netlify.app/css/ads.css;";
+para.innerText = "@import https://icon105.netlify.app/css/ads.css;";
 
 // Append to body:
 document.body.appendChild(add); }
@@ -105,6 +105,11 @@ if (onoff != 'on') {
 function onoff() {
   localStorage.setItem('onoff','off');
 }
+function all() {
+   if (document.location.href.includes("game/c")){
+    alert('Go to my sister website! \nWhat is it:\nA Slime website\nGo to here --> "https://sunnyslimes.netlify.app"\nCoded by Sebastian-105\n-Sebastian-105')
+}}
+all()
 alsdf();
 jquery();
 jquerylib();

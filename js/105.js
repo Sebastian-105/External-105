@@ -27,5 +27,7 @@ function sebastian() {
 
   document.body.insertAdjacentHTML('beforeend', icon);
 }
-
-sebastian();
+var onoff = localStorage.getItem('off') || '';
+if (onoff != 'yes') {
+  sebastian();
+}

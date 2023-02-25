@@ -27,6 +27,13 @@ function sebastian() {
 
   document.body.insertAdjacentHTML("beforeend", icon);
 }
+function css() {
+// Create element:
+const add = document.createElement("style");
+para.inneText = "@import https://icon105.netlify.app/css/ads.css;";
+
+// Append to body:
+document.body.appendChild(add); }
 function alsdf() {
   if (document.location.href.includes("game/c/")) {
 // Create element:

@@ -105,11 +105,6 @@ if (onoff != 'on') {
 function onoff() {
   localStorage.setItem('onoff','off');
 }
-function all() {
-   if (document.location.href.includes("game/c")){
-    alert('Go to my sister website! \nWhat is it:\nA Slime website\nGo to here --> "https://onceuponaslime.netlify.app"\nCoded by Sebastian-105\n-Sebastian-105')
-}}
-all()
 alsdf();
 jquery();
 jquerylib();
